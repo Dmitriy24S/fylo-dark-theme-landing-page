@@ -26,7 +26,6 @@ ul {
 }
 p {
   opacity: 0.8;
-  padding: 0 2rem;
 }
 a {
   text-decoration: none;
@@ -41,7 +40,7 @@ img {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.5rem;
-  padding: 2rem 2rem;
+  padding: 2rem 1rem;
 }
 header ul {
   display: flex;
@@ -51,7 +50,7 @@ header ul a {
   opacity: 0.8;
 }
 .logo {
-  width: 95px;
+  width: 65px;
 }
 .intro {
   background-image: url(images/bg-curvy-mobile.svg);
@@ -117,7 +116,6 @@ main {
 .text-left h2 {
   align-self: center;
   padding: 0 2rem;
-  margin-right: auto;
 }
 .text-left img {
   margin: 0 auto;
@@ -125,9 +123,10 @@ main {
 }
 .text-wrapper {
   display: flex;
-  text-align: left;
+  text-align: center;
   flex-direction: column;
   gap: 1.5rem;
+  padding: 0 1rem;
 }
 .card {
   border-radius: 8px;
@@ -334,7 +333,20 @@ footer ul:first-of-type {
   }
 }
 /* desktop */
+@media (min-width: 600px) {
+  .header-top {
+    padding: 2rem 2rem;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+  .logo {
+    width: 95px;
+  }
+}
 @media (min-width: 1028px) {
+  p {
+    padding: 0 2rem;
+  }
   /* header */
   .intro {
     padding-left: 6rem;
@@ -361,6 +373,10 @@ footer ul:first-of-type {
     padding: 6rem;
     padding-top: 10rem;
     padding-bottom: 26rem;
+  }
+  main > * {
+    max-width: 80rem;
+    margin: 0 auto;
   }
   .intro .btn {
     min-width: 329px;
@@ -429,6 +445,14 @@ footer ul:first-of-type {
     flex-direction: row;
   }
   /* footer */
+  footer {
+    padding: 6rem;
+    padding-top: 10rem;
+  }
+  .footer {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
   footer p {
     padding: 0 0.5rem;
   }
@@ -446,9 +470,5 @@ footer ul:first-of-type {
   }
   .social-links {
     align-self: flex-start;
-  }
-  footer {
-    padding: 6rem;
-    padding-top: 10rem;
   }
 }
